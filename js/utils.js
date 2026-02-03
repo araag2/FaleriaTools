@@ -8822,7 +8822,7 @@ class BookModeViewBase {
 		if (this._isActive) return;
 		this._isActive = true;
 
-		document.title = `${this._pageTitle} - 5etools`;
+		document.title = `${this._pageTitle} - FaleriaTools`;
 		document.body.style.overflow = "hidden";
 		document.body.classList.add("bkmv-active");
 

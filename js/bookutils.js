@@ -111,7 +111,7 @@ export class BookUtil {
 			BookUtil.dispBook.html("");
 
 			const chapterTitle = (fromIndex.contents[ixChapter] || {}).name;
-			document.title = `${chapterTitle ? `${chapterTitle} - ` : ""}${fromIndex.name} - 5etools`;
+			document.title = `${chapterTitle ? `${chapterTitle} - ` : ""}${fromIndex.name} - FaleriaTools`;
 
 			BookUtil.curRender.controls = {};
 			BookUtil.dispBook.appends(Renderer.utils.getBorderTr());
@@ -674,7 +674,7 @@ export class BookUtil {
 	}
 
 	static async _booksHashChange_pHandleFound ({fromIndex, homebrewData, bookId, hashParts, wrpContents, isNewBook}) {
-		document.title = `${fromIndex.name} - 5etools`;
+		document.title = `${fromIndex.name} - FaleriaTools`;
 		es(`#page__title`).html(this._booksHashChange_getCleanName(fromIndex));
 		es(`#page__subtitle`).html("Browse content. Press F to find, and G to go to page.");
 		await this._pLoadChapter(fromIndex, bookId, hashParts, homebrewData, wrpContents);

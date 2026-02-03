@@ -457,7 +457,7 @@ Renderer.dice = {
 		const roll = ele.closeste(`[data-rollbox-last-rolled-by-name]`);
 		if (roll) return roll.attr("data-rollbox-last-rolled-by-name");
 
-		const name = document.title.replace("- 5etools", "").trim();
+		const name = document.title.replace("- FaleriaTools", "").trim();
 		return name === "DM Screen" ? "Dungeon Master" : name;
 	},
 

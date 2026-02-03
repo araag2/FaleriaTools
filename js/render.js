@@ -15011,7 +15011,7 @@ Renderer.hover = class {
 
 					<!-- Chrome Web App Icons -->
 					<link rel="manifest" href="manifest.webmanifest">
-					<meta name="application-name" content="5etools">
+					<meta name="application-name" content="FaleriaTools">
 					<meta name="theme-color" content="#006bc4">
 
 					<!-- Windows Start Menu tiles -->
@@ -15024,7 +15024,7 @@ Renderer.hover = class {
 					<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
 					<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
 					<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-					<meta name="apple-mobile-web-app-title" content="5etools">
+					<meta name="apple-mobile-web-app-title" content="FaleriaTools">
 
 					<!-- macOS Safari Pinned Tab and Touch Bar -->
 					<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">

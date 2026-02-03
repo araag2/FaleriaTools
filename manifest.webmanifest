@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
 	"default_locale": "en",
-	"name": "5etools",
-	"short_name": "5etools",
-	"description": "A suite of browser-based tools for 5th Edition  Dungeons & Dragons players and Dungeon Masters.",
+	"name": "FaleriaTools",
+	"short_name": "FaleriaTools",
+	"description": "A suite of tools for the Adventurers of Faleria to use.",
 	"icons": [
 		{
 			"src": "android-chrome-192x192.png",
