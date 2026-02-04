@@ -3962,6 +3962,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_HFFotM,
 	Parser.SRC_BMT,
 	Parser.SRC_DMTCRG,
+	Parser.SRC_BegG,
 	Parser.SRC_TD,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;
