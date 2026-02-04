@@ -8218,5 +8218,19 @@
 				}
 			]
 		}
+	},
+	"BegG": {
+		"Arcane Fever": {
+			"class": [
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				},
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				}
+			]
+		}
 	}
 }

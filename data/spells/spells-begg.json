@@ -1,0 +1,40 @@
+{
+	"spell": [
+		{
+			"name": "Arcane Fever",
+			"source": "BegG",
+			"page": 1,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You weaponize the thread of magic around your opponent.",
+				"Your target must make a Wisdom saving throw against your spell save DC. If they fail, they become dazed."
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		}
+	]
+}

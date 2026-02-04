@@ -5330,6 +5330,23 @@
 					"name": "Credits"
 				}
 			]
+		},
+		{
+			"name": "Beginner's Guide",
+			"id": "BegG",
+			"source": "BegG",
+			"group": "supplement",
+			"cover": {
+				"type": "internal",
+				"path": "covers/BegG.webp"
+			},
+			"published": "2026-02-04",
+			"author": "Faleria Team",
+			"contents": [
+				{
+					"name": "Introduction"
+				}
+			]
 		}
 	]
 }
