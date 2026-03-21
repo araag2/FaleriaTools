@@ -1,7 +1,7 @@
 "use strict";
 
 class UtilsChangelog {
-	static _RELEASE_URL = "https://github.com/5etools-mirror-3/5etools-2014-src/releases";
+	static _RELEASE_URL = "./";
 
 	static renderChangelog (changelog, wrp) {
 		let lastMajorVersion = 0;

@@ -123,7 +123,7 @@ const serverInfo = await PeerUtilV0.pInitialiseServers(
 	msg => console.log("server", msg),
 	err => console.error("server", err)
 );
-// Server user then sends each `serverInfo[N].textifiedSdp` token to client user N, e.g. via Discord
+// Server user then sends each `serverInfo[N].textifiedSdp` token to client user N, e.g. via a messaging app
 //   the string is of the form: `{::alpha|...base64 data...::}`
 // Each client user inputs their token into their client
 const clientInfo1 = await PeerUtilV0.pInitialiseClient(
@@ -137,7 +137,7 @@ const clientInfo2 = await PeerUtilV0.pInitialiseClient(
 	err => console.error("client 2", err)
 );
 // Each client will produces a response token of the same format, which the client user sends back to the
-//   server user, again e.g. via Discord
+//   server user, again e.g. via a messaging app
 // The server user then copy-pastes all the client tokens into the server. These tokens can be mixed in with
 //   other text, e.g. copied en-masse from a chat log
 await PeerUtilV0.pConnectClientsToServers(serverInfo, `[02:16] Client Username 1: This should work, right?${clientInfo1.textifiedSdp}[02:17] Client Username 2: Let's hope so...${clientInfo2.textifiedSdp}`);
@@ -233,7 +233,7 @@ class PeerServerV0 extends PeerV0 {
 	 *
 	 * @param messageHandler Function which handles received messages.
 	 * @param errorHandler Function which handles errors.
-	 * @return {Promise<String>} session description to be provided (manually, e.g. via Discord) to a client
+	 * @return {Promise<String>} session description to be provided manually (e.g. via a messaging app) to a client
 	 */
 	async pMakeOffer (messageHandler, errorHandler) {
 		return new Promise((resolve, reject) => {
@@ -269,7 +269,7 @@ class PeerClientV0 extends PeerV0 {
 
 	/**
 	 * STAGE 3: Receive offer, and produce answer.
-	 * @return {Promise<String>} session description to be provided (manually, e.g. via Discord) to a server
+	 * @return {Promise<String>} session description to be provided manually (e.g. via a messaging app) to a server
 	 */
 	async pReceiveOfferAndGetAnswer (sdpOffer, messageHandler, errorHandler) {
 		return new Promise((resolve, reject) => {

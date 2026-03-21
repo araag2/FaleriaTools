@@ -1,8 +1,6 @@
-# 5e.tools
+# Faleria Tools
 
-Visit the [main site](https://5e.tools/index.html) or go to the unofficial GitHub [mirror](index.html).
-
-[Join the 5etools Discord here!](https://discord.gg/5etools)
+Visit your fork deployment (for example, `index.html`) to use the site.
 
 ## Help and Support
 

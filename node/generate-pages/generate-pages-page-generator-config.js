@@ -131,7 +131,7 @@ class _PageGeneratorIndex extends PageGeneratorGeneric {
 	_page = "index.html";
 	_pageDescription = "A suite of tools for the Adventurers of Faleria to use.";
 
-	_navbarTitleHtml = `5e<span>tools</span>`;
+	_navbarTitleHtml = `Faleria <span>Tools</span>`;
 	_navbarDescription = "A suite of tools for the Adventurers of Faleria to use.";
 	_navbarPageTitleStyleAdditional = "page__title--home";
 

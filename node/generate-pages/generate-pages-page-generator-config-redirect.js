@@ -1,7 +1,7 @@
 import {PageGeneratorRedirectBase} from "./generate-pages-page-generator.js";
 
-class _PageGenerator5etools extends PageGeneratorRedirectBase {
-	_page = "5etools.html";
+class _PageGeneratorFaleriaTools extends PageGeneratorRedirectBase {
+	_page = "faleriatools.html";
 
 	_pageDescription = "A suite of tools for the Adventurers of Faleria to use.";
 
@@ -10,5 +10,5 @@ class _PageGenerator5etools extends PageGeneratorRedirectBase {
 }
 
 export const PAGE_GENERATORS_REDIRECT = [
-	new _PageGenerator5etools(),
+	new _PageGeneratorFaleriaTools(),
 ];

@@ -127,6 +127,7 @@ export class EncounterPartyMetaClassic extends EncounterPartyMetaBase {
 				return avg - (deviation * 2);
 			}
 
+			case "faleriaTools":
 			case "5etools": {
 				// The ideal interpretation of this:
 				//   "don't count any monsters whose challenge rating is significantly below the average

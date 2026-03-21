@@ -587,7 +587,7 @@ class Board {
 				</div>
 
 				<div class="mb-4">
-					If you suspect this is the <span class="help" title="Spoiler: it always is">result of a bug</span>, or need help recovering lost data, drop past our <a href="https://discord.gg/5etools" target="_blank" rel="noopener noreferrer">Discord</a>.
+					If you suspect this is the <span class="help" title="Spoiler: it always is">result of a bug</span>, or need help recovering lost data, please open an issue in this fork's repository.
 				</div>
 
 				<div class="ve-flex-h-right ve-flex-v-center">

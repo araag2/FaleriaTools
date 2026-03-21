@@ -257,7 +257,7 @@ class NavBar {
 			},
 		);
 
-		this._addElement_li({page: "https://wiki.tercept.net/en/5eTools", aText: "Help", isExternal: true});
+		this._addElement_li({page: "https://wiki.tercept.net/en/FaleriaTools", aText: "Help", isExternal: true});
 	}
 
 	/**
@@ -690,7 +690,7 @@ class NavBar {
 
 	static _getCurrentWikiHelpPage () {
 		const slug = NavBar._getCurrentPage().replace(/.html$/i, "");
-		return `https://wiki.tercept.net/en/5eTools/HelpPages/${slug === "index" ? "" : slug}`;
+		return `https://wiki.tercept.net/en/FaleriaTools/HelpPages/${slug === "index" ? "" : slug}`;
 	}
 
 	static highlightCurrentPage () {
@@ -873,12 +873,12 @@ NavBar.InteractionManager = class {
 		const async = await StorageUtil.pGetDump();
 		const syncStyle = globalThis.styleSwitcher.constructor.syncGetStorageDump();
 		const dump = {sync, async, syncStyle};
-		DataUtil.userDownload("5etools", dump, {fileType: "5etools"});
+		DataUtil.userDownload("faleria-tools", dump, {fileType: "faleria-tools"});
 	}
 
 	static async _pOnClick_button_loadStateFile (evt) {
 		evt.preventDefault();
-		const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["5etools"]});
+		const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["faleria-tools", "5etools"]});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
