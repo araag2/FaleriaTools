@@ -1,0 +1,68 @@
+@use "vars/vars";
+
+@layer vetools {
+	.character-creator {
+		&__layout {
+			display: grid;
+			grid-template-columns: 280px 1fr;
+			gap: 12px;
+			height: 100%;
+			min-height: 0;
+		}
+
+		&__steps {
+			border: 1px solid vars.$rgb-border-grey--trans;
+			padding: 8px;
+			overflow: auto;
+		}
+
+		&__step {
+			width: 100%;
+			text-align: left;
+			margin-bottom: 6px;
+		}
+
+		&__step-title {
+			font-weight: bold;
+		}
+
+		&__step-sub {
+			font-size: 12px;
+			opacity: 0.8;
+		}
+
+		&__panel {
+			border: 1px solid vars.$rgb-border-grey--trans;
+			padding: 10px;
+			overflow: auto;
+			min-height: 0;
+		}
+
+		&__list {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+			gap: 8px;
+			max-height: 420px;
+			overflow: auto;
+		}
+
+		&__card {
+			border: 1px solid vars.$rgb-border-grey--trans;
+			padding: 8px;
+		}
+
+		&__summary {
+			border-top: 1px solid vars.$rgb-border-grey--trans;
+			margin-top: 8px;
+			padding-top: 8px;
+		}
+	}
+
+	@media screen and (width <= #{vars.$width-screen-md}) {
+		.character-creator {
+			&__layout {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}

@@ -391,6 +391,31 @@ class _PageGeneratorStatgen extends PageGeneratorGeneric {
 	];
 }
 
+class _PageGeneratorCharactercreator extends PageGeneratorGeneric {
+	_filename = "page/template-page-charactercreator.hbs";
+	_page = "charactercreator.html";
+
+	_pageTitle = "Character Creator";
+	_navbarDescription = "Build a full character with guided steps and point buy.";
+
+	_isFontAwesome = true;
+	_stylesheets = [
+		"statgen-bundle",
+		"charactercreator",
+	];
+
+	_scriptsUtilsAdditional = [
+		"filter-common.js",
+		"filter-races.js",
+		"filter-backgrounds.js",
+		"filter-feats.js",
+	];
+
+	_scriptsModules = [
+		"charactercreator.js",
+	];
+}
+
 export const PAGE_GENERATORS = 	[
 	...PAGE_GENERATORS_LISTPAGE,
 	...PAGE_GENERATORS_REDIRECT,
@@ -416,5 +441,6 @@ export const PAGE_GENERATORS = 	[
 	new _PageGeneratorPrivacyPolicy(),
 	new _PageGeneratorRenderdemo(),
 	new _PageGeneratorSearch(),
+	new _PageGeneratorCharactercreator(),
 	new _PageGeneratorStatgen(),
 ];
